@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Snow Effect</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="christmas-music" autoplay loop>
+      <source src="겨울 BGM.mp3" type="audio/mp3" />
+    </audio>
+    <div class="container">
+      <h1>Merry Christmas!</h1>
+      <p>Let it snow, let it snow, let it snow!</p>
+    </div>
+    <div class="flip-clock">
+      <div class="unit">
+        <span id="days" class="number">00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="unit">
+        <span id="hours" class="number">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="unit">
+        <span id="minutes" class="number">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="unit">
+        <span id="seconds" class="number">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <div class="snowflakes">
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+      <div class="snowflake">*</div>
+
+      <!-- ...other snowflakes... -->
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // 페이지 로드 시 오디오의 볼륨을 0.1로 설정 (소리 낮추기)
+      const audio = document.getElementById("christmas-music");
+      audio.volume = 0.1; // 0.0 (음소거)부터 1.0 (최대 볼륨) 사이로 설정
+    </script>
+  </body>
+</html>
